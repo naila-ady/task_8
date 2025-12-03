@@ -92,3 +92,11 @@ This is a scientific calculator application built with Next.js, React, and TypeS
 4.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the calculator.
 
 
+5. ## Screenshots of calculator operations
+[![Calculator UI](assets/img1.jpg)](assets/img1.jpg)
+
+[![Calculator UI](assets/img2.jpg)](assets/img2.jpg)
+
+[![Calculator UI](assets/img3.jpg)](assets/img3.jpg)
+
+[![Calculator UI](assets/img4.jpg)](assets/img4.jpg)
