@@ -93,7 +93,7 @@ This is a scientific calculator application built with Next.js, React, and TypeS
 
 5.  ## Screenshots of calculator operations
 
-7.  [![Calculator UI](./assets/img1.jpg)](./assets/img1.jpg)
+7.  [![Calculator UI](./assets/img1.jpg)]
 8.  ![Calculator UI](./assets/img1.jpg)](./assets/img2.jpg)
 9.  ![Calculator UI](./assets/img1.jpg)](./assets/img3.jpg)
 10. ![Calculator UI](./assets/img1.jpg)](./assets/img4.jpg)
