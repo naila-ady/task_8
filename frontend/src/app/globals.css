@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #28e6e6;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 90px);
+  grid-template-rows: minmax(110px, auto) repeat(5, 70px);
+  background-color: #063d62;
+  padding: 15px;
+  border-radius: 15px;
+  gap: 8px; /* Added gap between buttons */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: 1px solid #999;
+  outline: none;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 8px;
+  transition: background-color 0.1s;
+}
+
+.calculator-grid > button:hover {
+  background-color: #fff;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.operator {
+  background-color: #ff9500;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #e08000;
+}
+
+.equals {
+  background-color: #007aff;
+  color: white;
+}
+
+.equals:hover {
+  background-color: #0060e0;
+}
+
+.clear {
+  background-color: #ff3b30;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #e03020;
+}
+
+.display {
+  grid-column: 1 / -1;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.display .previous-operand {
+  color: rgba(255, 255, 255, .85);
+  font-size: 1.2rem;
+}
+
+.display .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 400px) {
+  .calculator-grid {
+    grid-template-columns: repeat(4, 55px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 55px);
+    gap: 6px;
+  }
+
+  .calculator-grid > button {
+    font-size: 1.2rem;
+    border-radius: 6px;
+  }
+
+  .display .current-operand {
+    font-size: 2rem;
+  }
+
+  .display .previous-operand {
+    font-size: 1.1rem;
+  }
+}
